@@ -26,9 +26,9 @@ export const getWeatherFromCoords = async (locationObj) => {
     }*/
 
     const urlDataObj = {
-        lat: locationObj.getlat(),
-        lon: locationObj.getlon(),
-        units: locationObj.getunit()
+        lat: locationObj.getLat(),
+        lon: locationObj.getLon(),
+        units: locationObj.getUnit(),
     };
     try {
         const weatherStream = await fetch("./.netlify/functions/get_weather", {
