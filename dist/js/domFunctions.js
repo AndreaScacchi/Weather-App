@@ -189,7 +189,6 @@ const createCurrentConditionsDivs = (weatherObj, unit) => {
         "wind",
         `Wind ${Math.round(Number(weatherObj.current.wind_speed))}  ${windUnit}`
     );
-    console.log(humidity, wind);
     return [icon, temp, desc, maxTemp, minTemp, feels, humidity, wind];
 };
 
